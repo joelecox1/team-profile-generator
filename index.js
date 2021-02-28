@@ -146,6 +146,4 @@ function appMenu() {
   createManager();
 };
 
-
-
 appMenu();
