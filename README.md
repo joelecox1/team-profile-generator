@@ -42,7 +42,7 @@
 
   ## Test
 
-  Run the following commad to run tests on your application:
+  Run the following command to run tests on your application:
 
   'npm test'
 
