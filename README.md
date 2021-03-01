@@ -21,7 +21,7 @@
 
   ## Usage
 
-  [Instructional video for application usage](https://bit.ly/3r36TSE)
+  [Instructional video for application usage](https://youtu.be/oMteXIs0RQM)
   
   Answer the prompts in the command line...
 
