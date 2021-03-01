@@ -4,15 +4,10 @@ const fs = require('fs');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-
 const OUTPUT_DIR = path.resolve(__dirname, 'output');
-
 const outputPath = path.join(OUTPUT_DIR, 'team.html');
-
 const render = require('./src/page-template');
-
 const teamMembers = [];
-
 const idArr = [];
 
 function appMenu() {
@@ -33,7 +28,16 @@ function appMenu() {
       {
         type: 'input',
         name: 'managerEmail',
-        message: 'Input Manager email address.'
+        message: 'Input Manager email address.',
+        validate: answer => {
+          const pass = answer.match(
+            /\S+@\S+\.\S+/
+          );
+          if (pass) {
+            return true;
+          } 
+          return 'Please enter a valid email address';            
+        }
       },
       {
         type: 'input',
@@ -92,7 +96,13 @@ function appMenu() {
       {
         type: 'input',
         name: 'engineerEmail',
-        message: 'Input engineer email address.'
+        message: 'Input engineer email address.',
+        validate: answer => {
+          const pass = answer.match(
+            /\S+@\S+\.\S+/
+          );
+          (pass) ? true : 'Please enter a valid email address'
+        }
       },
       {
         type: 'input',
@@ -123,7 +133,13 @@ function appMenu() {
       {
         type: 'input',
         name: 'internEmail',
-        message: 'Input Intern email address.'
+        message: 'Input Intern email address.',
+        validate: answer => {
+          const pass = answer.match(
+            /\S+@\S+\.\S+/
+          );
+          pass ? true : 'Please enter a valid email address'
+        }
       },
       {
         type: 'input',
