@@ -9,14 +9,14 @@ test('if office number can be set via constructor argument', () => {
   expect(e.officeNumber).toBe(testValue);
 });
 
-test('if getRole returns manager', () => {
+test('if getRole returns Manager', () => {
   const testValue = 'Manager';
   const e = new Manager('foo', 3, 'test@test.com', 100);
 
   expect(e.getRole()).toBe(testValue);
 });
 
-test('if you can get office number via office function', () => {
+test('if you can get office number via getOfficeeNumber', () => {
   const testValue = 100;
   const e = new Manager('foo', 3, 'test@test.com', testValue);
 
