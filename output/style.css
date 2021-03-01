@@ -5,3 +5,7 @@ header {
 h1 {
   padding-top: 50px;
 }
+
+.employee-card {
+  margin: 20px;
+}

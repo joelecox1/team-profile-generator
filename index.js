@@ -101,7 +101,10 @@ function appMenu() {
           const pass = answer.match(
             /\S+@\S+\.\S+/
           );
-          (pass) ? true : 'Please enter a valid email address'
+          if (pass) {
+            return true;
+          } 
+          return 'Please enter a valid email address';
         }
       },
       {
@@ -138,7 +141,10 @@ function appMenu() {
           const pass = answer.match(
             /\S+@\S+\.\S+/
           );
-          pass ? true : 'Please enter a valid email address'
+          if (pass) {
+            return true;
+          } 
+          return 'Please enter a valid email address';
         }
       },
       {
