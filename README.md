@@ -15,15 +15,21 @@
   
   ## Installation
 
-  [README Generator](https://joelecox1.github.io/team-profile-generator/.)
+  [Team Profile Generator](https://joelecox1.github.io/team-profile-generator/.)
 
   Clone this repository and type 'npm i inquirer' in the command line in the root folder. Then type 'node index'. Answer the questions provided in the prompt. Your HTML and associated CSS files will be generated in the output directory.
 
   ## Usage
 
   [Instructional video for application usage](https://bit.ly/3r36TSE)
+  
+  Answer the prompts in the command line...
 
   ![Screenshot of application](./images/team-profile-gen-screenshot.png)
+  
+  And the rendered HTML & CSS should appear like this in your browser.
+  
+  ![Screenshot of final product](./images/finished-html-screenshot.png)
 
   ## Contributors
 
